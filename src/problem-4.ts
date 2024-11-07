@@ -1,16 +1,21 @@
 {
+    //
 
 
 
-    type Circle = {
-        shape: "circle",
-        radius: number
+    interface BaseShape {
+        shape: string; 
     }
 
-    type Rectangle = {
-        shape: "rectangle",
-        width: number,
-        height: number
+    interface Circle extends BaseShape {
+        shape: "circle";
+        radius: number;
+    }
+
+    interface Rectangle extends BaseShape {
+        shape: "rectangle";
+        width: number;
+        height: number;
     }
 
     type Shape = Circle | Rectangle
@@ -18,11 +23,11 @@
     function calculateShapeArea(shape: Shape): number {
 
         if (shape.shape === "circle") {
-            const area = Math.PI * shape.radius * shape.radius
-            return area
+            const ShapeArea = Math.PI * shape.radius * shape.radius
+            return ShapeArea
         } else if (shape.shape === "rectangle") {
-            const area = shape.width * shape.height
-            return area;
+            const ShapeArea = shape.width * shape.height
+            return ShapeArea;
         } else {
             return 0
         }
@@ -44,4 +49,8 @@
 
 
 
+
+
+
+    //
 }
