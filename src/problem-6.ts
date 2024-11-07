@@ -17,7 +17,8 @@
         email:"bappy404@gmail.com"
     }
 
-    console.log(updateProfile(myProfile, {age:26}));
+    const showResult = updateProfile(myProfile, {age:26})
+    // console.log(showResult);
 
 
 //

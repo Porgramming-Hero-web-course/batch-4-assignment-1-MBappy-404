@@ -45,7 +45,7 @@
         height: 6
     }
 
-    console.log(calculateShapeArea(circle));
+    // console.log(calculateShapeArea(circle));
 
 
 
