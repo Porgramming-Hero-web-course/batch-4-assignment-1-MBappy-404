@@ -6,7 +6,7 @@ In TypeScript, union types and intersection types help us work with different ty
 ## Union Types (`|`)
 Union types let us use more than one type for a variable or function. For example, if we say number | string, this means the value can be either a number or a string. This is helpful if we don’t know the exact type of data.
 
-# Example
+### Example
  
 function formatValue(value: number | string) {
     if (typeof value === "number") {
@@ -22,7 +22,7 @@ function formatValue(value: number | string) {
 ## Intersection Types (`&`)
 Intersection types combine two types into one. This means the object will have all the properties from both types. For example, Person & Employee means the object must have both the name and employeeId properties.
 
-# Example
+### Example
 
 type Person = { name: string };
 type EmployeeId = { employeeId: number };
